@@ -42,12 +42,14 @@
         <a class="navbar-brand fw-bold" href="{{ url('/') }}">
             Vortex Recrutamento
         </a>
-
-        <div class="navbar-nav flex-row gap-3">
-            <a class="nav-link" href="{{ route('vagas.index') }}">
-                Vagas
-            </a>
-        </div>
+    <div class="navbar-nav flex-row gap-3">
+        <a class="nav-link" href="{{ route('vagas.index') }}">
+            Vagas
+        </a>
+        <a class="nav-link" href="{{ route('candidatos.index') }}">
+            Candidatos
+        </a>
+    </div>
     </div>
 </nav>
 
