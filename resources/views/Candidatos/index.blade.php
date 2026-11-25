@@ -97,8 +97,11 @@
                         <td>{{ $candidato->cpf }}</td>
 
                         <td>
-                            <div class="d-flex gap-2 flex-wrap">
-
+                            <div class="d-flex gap-2 flex-wrap">                            
+                                <a href="{{ route('inscricoes.index', $candidato) }}"
+                                    class="btn btn-sm btn-outline-success">
+                                    Inscrições
+                                </a>
                                 <a href="{{ route('candidatos.edit', $candidato) }}"
                                     class="btn btn-sm btn-outline-primary">
                                     Editar
