@@ -24,6 +24,11 @@ class Vaga extends Model
         'ativa' => 'boolean',
         'salario' => 'decimal:2',
     ];
+    
+    public function aceitaInscricoes(): bool
+    {
+    return $this->ativa === true;
+    }
 
     public function candidatos(): BelongsToMany
     {

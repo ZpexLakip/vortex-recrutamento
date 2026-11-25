@@ -36,7 +36,7 @@ class InscricaoController extends Controller
             $vaga = Vaga::lockForUpdate()
                 ->findOrFail($dados['vaga_id']);
 
-            if (!$vaga->ativa) {
+            if (!$vaga->aceitaInscricoes()) {
                 throw ValidationException::withMessages([
                     'vaga_id' => 'Esta vaga está pausada.',
                 ]);
